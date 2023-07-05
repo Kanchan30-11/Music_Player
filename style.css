@@ -1,0 +1,140 @@
+
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: rgba(37, 46, 47, 0.996);
+}
+nav{
+    font-family: 'Pacifico', cursive;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color:rgb(16, 57, 67);
+    color: aliceblue;
+}
+nav ul li{
+    padding: 0px 12px;
+}
+
+.brand img{
+    width:60px;
+    padding:0px 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 73vh;
+    
+    color: rgb(2, 2, 2);
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    margin:23px auto;
+    width: 70%;
+    border-radius: 20px;
+    padding:34px;
+    background-image: url(/music-player-2951399_1280.jpg);
+    padding: 10px;
+}
+.bottom{
+    position: sticky;
+    height: 110px;
+    background-color:rgb(2, 24, 30);
+   
+    bottom: 0;
+    color: white ;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.icons{
+margin-top: 15px;
+}
+.icons i{
+    cursor: pointer;
+}
+#myprogessBar{
+    width: 73vw; 
+    cursor: pointer;
+}
+.songItem{
+  position:sticky;
+  height:50px ;
+  display:flex ;
+  background-color:white ;
+  width:350px;
+  color: black;
+  margin: 20px 0px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  
+  
+}
+.songItemContainer{
+    margin-top: 74px;
+}
+ .songItem img{
+     width: 37px;
+     height: 30px;
+     margin: 11px 0px;
+     border-radius: 40px;
+     padding: 10px;
+ }
+.timestamp{
+    margin: 0px 10px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.songInfo{
+    color: aliceblue;
+    position:absolute;
+    left: 8vw;
+    font-family: 'Pacifico', cursive;
+}
+.songInfo img{
+    padding-top: 25px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+@media (max-width:540px) {
+    .songInfo{
+        left: -10vw;
+    }
+}
+@media (max-width:375px) and (min-width:200px) {
+    .songItem{
+        width: 240px;
+    }
+    .songName {
+        width: 95px;
+        font-size: small;
+    
+    }
+    .songInfo{
+        font-size: small;
+        left: -58px;
+    }
+    .songInfo img{
+        padding-top: 32px;
+    }
+    #gif{
+        padding-left: 44px;
+    }
+    .icons{
+        margin-top: -57px;
+    }
+}
